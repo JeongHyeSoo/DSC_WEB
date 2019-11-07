@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>selector 2</title>
+    <style>
+        /* selector { color : orange; } */
+
+        /* 1. h1 요소 */
+        h1{ color : orange;}
+        /* 2. id가 recipe인 요소 */
+        #recipe{ font-size : 1rem;
+
+        }
+        /* 3. class가 highlight 요소 */
+        .highlight{
+            color :red;
+            font-size:20px;
+            font-style:italic;
+
+        }
+        /* 4. ul이 자손으로 가지는 모든 li 요소 */
+        ul > li{
+            color :blue;
+        }
+        /* 6. id가 steps인 요소의 자식인 item 요소 */
+        #steps > .item{
+            text-align: center;
+        }
+    
+    </style>
+</head>
+<body>
+    <div id='recipe'>
+        <h1 class='header'>라면 끓이기</h1>
+        <ul id='ingredients'>
+            <li class='item'>라면</li>
+            <li class='item'>물 550ml</li>
+            <li class='item'>계란</li>
+            <li class='item'><s>만두</s></li>
+            <li class='item'><b>치즈</b></li>
+        </ul>
+        <ol id='steps'>
+            <li class='item'>물 올린다</li>
+            <li class='item'>물 끓인다</li>
+            <li class='item highlight' >스프먼저 넣는다</li>  
+            <li class='item'>면넣는다</li>  
+            <li class='item'>넣고 싶은걸 추가로 넣는다</li>
+            <li class='item'>식은밥을 꺼낸다</li>
+            <li class='item highlight'>밥을 말아먹는다</li>
+        </ol>
+        <p class='item'>낮잠때린다</p>
+    </div>
+</body>
+</html>

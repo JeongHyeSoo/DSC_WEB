@@ -1,0 +1,61 @@
+/* 1. Google 폰트를 적용해 봅시다. */
+    /* Google font import url */
+    @import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo');
+
+    /* Google font font-family */
+    * {
+        font-family: 'Nanum Myeongjo', serif;
+    }
+    
+
+
+/* 2. 제목의 크기와 색상을 다양하게 적용해 봅시다.
+    색상단위 - black, #000000, rgb(0, 0, 0), rgb(0, 0, 0, 100%) 
+    컬러피커 - https://www.w3schools.com/colors/colors_picker.asp
+    크기단위 - px, /  %, rem, em */
+    h1 {
+        color: #996501;
+        font-size: 1rem;
+    }
+
+/* 3. bg.jpg를 배경 이미지로 넣어 볼까요? 단 반복되지 않고, 페이지에 꽉차게 해주세요!*/
+    html {
+        background-image: url('./bg.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+/* 4. 제목 박스(title box)에 그라데이션을 넣어주세요. */
+.title_box {
+    text-align: center; border: 1px solid black; padding: 10px; margin: 20px;
+    background: #1E9600;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FF0000, #FFF200, #1E9600);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FF0000, #FFF200, #1E9600); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+/* 5. 이미지를 둥굴게 만들어 봅시다. */
+.lion {
+    background: white; width: 100px; margin: 0px auto; display: block;
+    border-radius: 100%;
+/* 6. 이미지에 그림자를 줘 봅시다. */
+    box-shadow: 1px 1px 10px black;
+}
+/* 7. p태그와 h2 태그를 하얀색, 가운데 정렬, 그림자 까지! 설정해봅시다! */
+    p, h2 {
+        color: white;
+        text-align: center;
+        text-shadow: 1px 1px 1px black;
+    }
+
+/* 8. 제목박스와, 이미지, 링크에 마우스를 가져다 댈때 변화가 생기도록 해보세요! */
+.lion:hover{
+    transform: scale(1.2);
+    background: black;
+}
+.title_box:hover {
+    border:3px solid white;
+}
+a:hover {
+    text-decoration: none;
+    color:red;
+}

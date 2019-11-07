@@ -1,0 +1,17 @@
+
+#body{
+    background-image:url("grid.jpg")
+}
+#title{color:blue;text-align:Center;font-size:40px;
+    text-decoration:underline;text-shadow:3px 3px 3px #444444;
+}
+#title2 {
+    font-size:25px; color:blue;text-align:Center;
+}
+#smalltitle{
+    font-size:22px;color : green;
+}
+s{
+    font-size:15px; color :rgb(112, 112, 112);
+}
+

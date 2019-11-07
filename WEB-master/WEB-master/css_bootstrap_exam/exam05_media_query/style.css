@@ -1,0 +1,26 @@
+/* 스마트폰 */
+.pika {
+    width: 400px;
+    height: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 100px auto;
+}
+@media (max-width:799px){
+    .pika{
+        background-image: url('./1.jpg');
+    }
+}
+/* 태블릿 */
+@media only screen and (min-width:800px) and (max-width:1023px){
+    .pika{
+        background-image: url('./2.jpg');
+    }
+}
+
+/* 데스크탑 */
+@media only screen and (min-width:1024px){
+    .pika{
+        background-image: url('./3.jpeg');
+    }
+}

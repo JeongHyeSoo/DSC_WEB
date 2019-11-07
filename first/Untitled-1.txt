@@ -1,0 +1,20 @@
+<table border="1">
+<thead>
+<tr>
+<th>thead태그 내부 제목내용</th>
+<th>thead태그 내부 제목내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>tbody태그 내부 일반내용</td>
+<td>tbody태그 내부 일반내용</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td>tfoot태그 내부 일반내용</td>
+<td>tfoot태그 내부 일반내용</td>
+</tr>
+</tfoot>
+</table>

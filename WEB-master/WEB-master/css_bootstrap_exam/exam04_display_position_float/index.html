@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>exam04</title>
+    <style>
+        /* float 예제 */
+        /* 최종적으로는 블록 속성을 반환하게 됨 */
+        .exam1 .highlighted{ float : left; }
+
+        /* display 예제 */
+        .exam2 .inline{ display:inline; }
+        .exam2 .block{ display:block; }
+        .exam2 .none{ display:none; }
+
+        /* position 예제 */
+        /* 기본값 */
+        .exam3 .static { position : static; }
+        /* static에서 top / left로 위치를 추가로 지정할 수 있도록 함  */
+        .exam3 .relative { position : relative; top : 20px; left : 20px; }
+        /* 부모 요소를 기준(동일한 absolute인, 없다면 html문서 전체)으로 기존의 박스 정렬을 벗어남 */
+        .exam3 .absolute { position : absolute; }
+        /* 브라우저의 화면을 기준으로 박스 정렬을 벗어남 */
+        .exam3 .fixed { position : fixed; }
+
+        /* overflow 예제 */
+        .exam4 .visible { overflow : visible; }
+        .exam4 .scroll { overflow : scroll; }
+        .exam4 .hidden { overflow : hidden; }
+
+        /* z-index */
+        .exam5 p{ position:relative; display : inline-block; width : 100px; height : 30px; background-color: orange; border: red dashed; }
+        .exam5 .item-1 { top : 0 ; left : 0; }
+        .exam5 .item-2 { top : 15px ; left : -50px;  }
+        .exam5 .item-3 { top : 30px ; left : -100px;  }
+
+        /* 실제 적용 */
+        .exam5 .z100 { z-index:100; }
+        .exam5 .z10 { z-index:10; }
+        .exam5 .z1 { z-index:1; }
+    </style>
+</head>
+<body>
+    <div class='exam1'>
+        <h1>float</h1>
+        <div class='container'>
+            <p class='highlighted'>float된 요소</p>
+            <p>일반 블록 요소</p>
+        </div>
+    </div>
+    <hr>
+    <div class='exam2'>
+        <h1>display</h1>
+        <div class='container'>
+            <h3>block</h3>
+            <p class='block'>block content</p>
+            <hr>
+            <h3>inline</h3>
+            <p class='inline'>inline content</p>
+            <h3>none</h3>
+            <p class='none'>none content...</p>
+        </div>
+    </div>
+    <hr>
+    <div class='exam3'>
+        <h1>position</h1>
+        <div class='container'>
+            <p class='static'>content</p>
+        </div>
+    </div>
+    <hr>
+    <div class='exam4'>
+        <h1>overflow</h1>
+        <div class='container scroll'>
+            <p>content</p>
+            <p>content</p>
+            <p>content</p>
+            <p>content</p>
+            <p>content</p>
+            <p>content</p>
+            <p>content</p>
+            <p>content</p>
+        </div>
+    </div>
+    <hr>
+    <div class='exam5'>
+        <h1>z-index</h1>
+        <div class='container'>
+            <p class='item-1 z1'>content</p>
+            <p class='item-2 z10'>content</p>
+            <p class='item-3 z100'>content</p>
+        </div>
+    </div>
+</body>
+</html>

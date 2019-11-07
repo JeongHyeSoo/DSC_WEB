@@ -1,0 +1,75 @@
+/* HTML 태그 전체에 영향 */
+html { width : 100%; height : 100%; margin : 0 ; padding : 0; background : url('./syu.jpg'); background-size: cover; background-repeat:no-repeat; }
+        
+/* 
+    title이라는 아이디를 가진 요소
+*/
+#logo {
+	width: 200px;
+    height: 200px;
+    margin: auto;
+    background: url(./logo.png);
+    background-size: cover;
+    margin-top: 150px;
+}
+#title {
+    /* 폰트의 두께, 100 단위로 증가  */
+    font-weight : 300;
+    /* 폰트의 사이즈 */
+    /* px : 단위가 pixel. 
+            화면의 크기에 따라 보이는 것이 다를 수 있음 
+    */
+    font-size : 60px;
+    /* 폰트의 색 */
+    color : white;
+    
+    /* margin의 상단 값 */
+    /* margin-top : 300px; */
+
+    width : 380px;
+    margin : 0 auto 0 auto;
+	border-bottom : 5px solid #fff;
+	text-shadow: 0 0.0625rem 0.1875rem rgba(0,0,0,0.4);
+}
+
+#sub-title{
+    text-align: center;
+    color: #fff;
+    font-weight : 300;
+	font-size : 40px;
+	text-shadow: 0 0.0625rem 0.1875rem rgba(0,0,0,0.4);
+}
+
+/* title이라는 아이디를 가지는 요소의 자식요소들 중 b 태그 */
+#sub-title b{
+	color: rgb(251, 188, 6);
+}
+
+/* about이라는 클래스를 가지는 요소 */
+.about {
+    text-decoration : none;
+    text-align : center;
+    color : #fff;
+    font-size : 1.5em;
+    background-color: rgba(44,115,220,1);
+    padding : 10px 40px;
+    margin : 70px auto;
+
+    /* display default : inline */
+    display:block;
+    /* 가로 길이를 컨텐츠 사이즈에 자동으로 맞춤 */
+    /* width : fit-content; */
+    width : 100px;
+    
+    /* 애니메이션을 일으킴 */
+    transition : 0.3s;
+}
+
+/* .about 클래스에 마우스를 올렸을 경우 */
+.about:hover{
+    color : rgba(44,115,220,1);
+    background-color : white;
+    width : 105px;
+    /* 애니메이션을 일으킴 */ 
+    transition : 0.3s;
+}
