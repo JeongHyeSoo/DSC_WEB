@@ -1,7 +1,10 @@
 
 #body{
-    background-image:url("grid.jpg")
+    background-image:url("grid.jpg");
+    ;
+
 }
+
 #title{color:blue;text-align:Center;font-size:40px;
     text-decoration:underline;text-shadow:3px 3px 3px #444444;
 }
@@ -13,5 +16,14 @@
 }
 s{
     font-size:15px; color :rgb(112, 112, 112);
+}
+table { width: 500px;
+    border: 1px solid #444444
+
+}
+th,td{
+    border: 1px solid #444444;
+    text-align:center;
+    padding: 3px;
 }
 
