@@ -1,0 +1,32 @@
+ #body{ 
+    background-color:rgb(238, 238, 238);
+    text-align: center;
+ } 
+#입력
+{
+    height: 50px;
+    width: 400px;
+    border: 1px solid gray;
+    background: white;
+}
+input
+{
+    font-size: 10px;
+    width: 325px;
+    padding: 10px;
+    border:0px;
+    outline: none;
+
+}
+button{
+    border:0px;
+    height:60px;
+    width :100%;
+    outline: none;
+    background: rgb(8, 189, 98);
+    font-size: 12px;
+}
+
+input:-ms-input-placeholder {font-size:18px}
+input::-webkit-input-placeholder {font-size:18px}
+input::-moz-placeholder {font-size:18px}
