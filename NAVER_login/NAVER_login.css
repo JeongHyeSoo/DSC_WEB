@@ -2,29 +2,34 @@
     background-color:rgb(238, 238, 238);
     text-align: center;
     font-size :13px;
- } 
-div
+ }
+ h1{
+     font-size :13px;
+ }
+#div
 {
     height: 45px;
     width: 500px;
     border: 1px solid rgb(199, 199, 199);
     background: white;
 }
-input
+#input
 {
-    font-size: 8px;
-    width: 425px;
+    width: 500px;
     height:25px;
+    display: block; margin: 0px auto;/*추가*/
     padding: 10px;
     border: gray;
 }
-button{
+#button{
     border:0px;
-    height:60px;
+    height:60px; 
     width :500px;
+    display: block; margin: 0px auto; /*추가*/
     outline: none;
     background: rgb(8, 189, 98);
-    font-size: 10px;
+    font-size: 20px;
+    color : white;
 }
 
 input:-ms-input-placeholder {font-size:17px}
