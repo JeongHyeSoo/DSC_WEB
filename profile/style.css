@@ -1,0 +1,19 @@
+body{
+     text-align: center;
+}
+#back {
+    filter: brightness(60%); max-width: 100%; height: auto; margin:0px;
+
+} 
+div{
+    text-align: center;
+}
+#title {
+    text-align: left;
+}
+#pic{
+    background-image: url("back.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
