@@ -7,6 +7,7 @@
 #title {
     text-align: left; font-family:fantasy; font-size:40px;color:#fff; padding:13px;
 }
+
 #title:hover{color:rgb(255, 29, 29)}
 p{
     font-size:25px; font-family:Cursive; vertical-align: bottom; color:#fff;
@@ -55,10 +56,16 @@ p{
     border:4px solid silver; padding: 0px;
 }
 
+#PRO{
+    text-align: right; padding:20px;
+}
 
-h1{font-size:80px;}
-h2{font-size:80px;}
-ul{font-size:20px;}
+
+.st{font-size:70px; font-family:cursive; font-weight: bold;}
+ul{font-size:17px; font-family:sans-serif; color:rgb(59, 24, 0);}
+.PRO{font-size:50px; text-align: left; font-family:cursive; font-weight: bold;}
+.PRI{font-size:17px; text-align: left; font-family:sans-serif; color:rgb(59, 24, 0);}
+
 
 #bg{
 background-color: rgb(206, 206, 206);    
