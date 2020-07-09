@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>14주차 과제</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <button type="button" onclick="myfunction()">계산하기</button>
+        <script type="text/javascript">
+            var num;
+            var sum=0;
+            for(var i=1;i<3;i++)
+            {
+                var number=prompt("숫자"+i+" 값:");
+                num=parseInt(number);                    
+                sum+=num;
+               }
+             function myfunction()
+            {
+                alert("합계="+sum);
+            }
+        </script> 
+    </body>   
+</html>

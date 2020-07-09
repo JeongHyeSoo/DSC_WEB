@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>폼 연결하기</title>
+        <style>
+            fieldset{width:400px;}
+        </style>
+    </head>
+    <body>
+        
+    <h1>폼 연결하기</h1>    
+    <form name="form" method="get" action="form_app.jsp">
+        <fieldset>
+            <legend>로그인 정보</legend>
+            아 이 디&nbsp <input id="user id" type="text"/><br>
+            이 메 일 &nbsp<input type="email"/><br>
+            패스워드 <input id ="password" type="password"/><Br>
+           
+        </fieldset>
+        <fieldset>
+            <legend>개인정보</legend>
+            이  &nbsp&nbsp&nbsp 름 <input id="name" type="text"/><br>
+            생년월일 <input type="text"/><br>
+        </fieldset>
+        <fieldset>
+            <legend>신상정보</legend>
+            성별 <label><input type="radio" value="m">남</label>
+            <label><input type="radio" value="w">여</label><br>
+
+            취미 <label><input type="checkbox" value="여행">여행</label>
+            <label><input type="checkbox" value="독서">독서</label>
+            <label><input type="checkbox" value="영화감상">영화감상</label>
+            <label><input type="checkbox" value="게임">게임</label><br>
+        
+        </fieldset>
+        <fieldset>
+            <legend>소속</legend>
+            학과<input type="text" list="major"/><br>
+            <datalist id="major">
+                <option value="컴퓨터공학과"></option>
+                <option value="메카트로닉스학과"></option>
+                <option value="영문학과"></option>
+                <option value="국문학과"></option>
+            </datalist>
+        </fieldset>
+    </form>
+    <br>
+    <input type="submit" value="가입하기"/>&nbsp&nbsp&nbsp<input type="reset" value="취소"/><br>
+    </body>
+</html>

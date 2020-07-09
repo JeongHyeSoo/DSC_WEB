@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>12장</title>
+    </head>
+    <body>
+       <script type="text/javascript">
+            var user=prompt("반지름을 입력하세요");
+            function myfunction(area)
+            {
+                var ss=area*area*Math.PI;
+                var s=Math.round(ss);
+                document.write("원의 넓이 : "+s);
+            }    
+        </script>
+        <input type="button" onclick="myfunction(user);" value="원의 넓이 구하기"/> 
+    </body>   
+</html>
